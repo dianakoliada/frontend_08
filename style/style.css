@@ -11,7 +11,22 @@
 
 
 /* 010 */
-.item {
+.menu__item {
     display: inline-block;
     font-size: 1rem;
+    position: relative;
+}
+
+.menu__item:hover .menu-dropdown {
+    display: block;
+}
+
+.menu-dropdown {
+    display: none;
+    position: absolute;
+}
+
+.menu__link,
+.menu-dropdown__link {
+    text-decoration: none;
 }
