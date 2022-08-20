@@ -1,32 +1,56 @@
-/* 010 */
-.header {
-    text-align: center;
+/* 001 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 1%;
 }
 
 
 /* 010 */
 .menu {
     font-size: 0;
+    width: 29%;
+    text-align: center;  
 }
 
 
 /* 010 */
 .menu__item {
+    background-color: rgb(214, 6, 6);
+    width: 100px;
     display: inline-block;
     font-size: 1rem;
     position: relative;
 }
 
+
+/* 020 */
+.menu__item:hover {
+    background-color: black;
+    transition: 2s;
+}
+
+
+/* 030 */
 .menu__item:hover .menu-dropdown {
     display: block;
 }
 
+
+/* 010 */
 .menu-dropdown {
     display: none;
     position: absolute;
+    width: 130px;
+    padding: 10%;
+    background-color: rgb(214, 6, 6);
 }
 
+
+/* 010*2 */
 .menu__link,
 .menu-dropdown__link {
     text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    line-height: 50px;
 }
